@@ -6,6 +6,45 @@ html,body{
     padding: 0px !important;
 }
 
+.transparent-button {
+    width: auto;
+    height: 0px;
+    background: transparent;
+    border: none;
+    color: #f7f6f6; /* change the color to your desired font color */
+  }
+
+  #myForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+  }
+  #myForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .transparent-button:hover{
+color: #fbff02;
+
+  }
+  .show-form:hover {
+    color: #aaa;
+  }
+
+#myForm {
+    display: none;
+}
+
 *{
     text-decoration: none !important;
 }

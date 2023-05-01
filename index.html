@@ -16,7 +16,7 @@
                 <h2>HealthCare Pro</h2>
             </div>
             <div class="links">
-                <a href="#" class="mainlink">Login</a>
+                <a href="login.html" class="mainlink">Login</a>
                 <a href="#">Help</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
@@ -30,14 +30,68 @@
                 <h1>Stay In.<span style="color:#e0501b;font-size: 4vw"> Stay Safe.</span> </h1>
                 <h3>Lets all work together to put an end to this pandemic. <br> Help stop the spread.</h3>
                 <br>
-                <div class="btn">
-                    <a href="#">Book An Appointment</a>
+                <div class="btn" >
+                    <a href="#" ></a>
+                    <button class="transparent-button"  onclick="toggleForm()">Book An Appointment</button>
                 </div>
             </div>
             <div class="landingImage" data-aos="fade-down" data-aos-duration="2000">
                 <img src="img/bg.png" alt="">
             </div>
         </div>
+
+
+        <div >
+            <div id="myForm" style="padding: 40px 40px">
+                <h3 >Book Appointment</h3>
+                <div  style="margin-top: 40px">
+                    <div ><label class="h6">Name *</label>
+                        <div class="form-group" style="margin-top: 10px"><input class="form-control" type="text"
+                                placeholder="Full Name * "></input></div>
+                    </div>
+                    <div class="form-group" style="margin-top: 10px"><label class="h6">Email address *</label>
+                        <div class="form-group" style="margin-top: 10px"><input class="form-control" type="text"
+                                placeholder="example@gmail.com  "></input></div>
+                    </div>
+                    <div class="form-group" style="margin-top: 10px"><label class="h6">Departement *</label>
+                        <div class="form-group" style="margin-top: 10px">
+                            <select class="custom-select form-control" style="margin-top: 10px">
+                                <option>Please Select</option><svg width="8" height="14" viewBox="0 0 8 14"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 0 12 L 5 7 L 0 2 L 1 0 L 8 7 L 1 14 L 0 12 Z"
+                                        fill="rgb(115, 115, 115)" />
+                                </svg>
+                                <option>List Entry # 1</option>
+                                <option>List Entry # 2</option>
+                                <option>List Entry # 3</option>
+                                <option>List Entry # 4</option>
+                                <option>List Entry # 5</option>
+                            </select></div>
+                    </div>
+                    <div class="form-group" style="margin-top: 10px"><label class="h6">Time *</label>
+                        <div class="form-group" style="margin-top: 10px">
+                            <select class="custom-select form-control">
+                                <option>4:00 Available</option><svg width="8" height="14" viewBox="0 0 8 14"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 0 12 L 5 7 L 0 2 L 1 0 L 8 7 L 1 14 L 0 12 Z"
+                                        fill="rgb(115, 115, 115)" />
+                                </svg>
+                                <option>List Entry # 1</option>
+                                <option>List Entry # 2</option>
+                                <option>List Entry # 3</option>
+                                <option>List Entry # 4</option>
+                                <option>List Entry # 5</option>
+                            </select></div>
+                    </div>
+                </div>
+                          <button class="show-form" onclick="toggleForm()" style="margin-top: 40px"><span>Book
+                                  Appointment</span></button>
+                </div>
+            </div>
+
+
+
+
 
         <!-- ABOUT SECTION -->
 
@@ -149,5 +203,16 @@
     <script>
             AOS.init();
     </script>
+
+<script>
+    function toggleForm() {
+        var form = document.getElementById("myForm");
+        if (form.style.display === "none") {
+            form.style.display = "block";
+        } else {
+            form.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
