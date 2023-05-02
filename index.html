@@ -13,7 +13,7 @@
     <div class="wrapper">
         <div class="nav">
             <div class="logo">
-                <h2>HealthCare Pro</h2>
+                <h2>WebHealth Pro</h2>
             </div>
             <div class="links">
                 <a href="login.html" class="mainlink">Login</a>
@@ -27,7 +27,7 @@
 
         <div class="landing">
             <div class="landingText" data-aos="fade-up" data-aos-duration="1000">
-                <h1>Stay In.<span style="color:#e0501b;font-size: 4vw"> Stay Safe.</span> </h1>
+                <h1>First,<span style="color:#e0501b;font-size: 4vw"> Free Consultation</span> </h1>
                 <h3>Lets all work together to put an end to this pandemic. <br> Help stop the spread.</h3>
                 <br>
                 <div class="btn" >
@@ -42,50 +42,52 @@
 
 
         <div >
-            <div id="myForm" style="padding: 40px 40px">
+            <div id="myForm"    style="padding: 40px 40px">
                 <h3 >Book Appointment</h3>
+                <form action="insert.php"  method="post">
                 <div  style="margin-top: 40px">
                     <div ><label class="h6">Name *</label>
-                        <div class="form-group" style="margin-top: 10px"><input class="form-control" type="text"
+                        <div class="form-group" style="margin-top: 10px"><input name="name" class="form-control" type="text"
                                 placeholder="Full Name * "></input></div>
                     </div>
                     <div class="form-group" style="margin-top: 10px"><label class="h6">Email address *</label>
-                        <div class="form-group" style="margin-top: 10px"><input class="form-control" type="text"
+                        <div  class="form-group" style="margin-top: 10px"><input name="email" class="form-control" type="text"
                                 placeholder="example@gmail.com  "></input></div>
                     </div>
                     <div class="form-group" style="margin-top: 10px"><label class="h6">Departement *</label>
                         <div class="form-group" style="margin-top: 10px">
-                            <select class="custom-select form-control" style="margin-top: 10px">
+                            <select name="department" class="custom-select form-control" style="margin-top: 10px">
                                 <option>Please Select</option><svg width="8" height="14" viewBox="0 0 8 14"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    fill="none" >
                                     <path d="M 0 12 L 5 7 L 0 2 L 1 0 L 8 7 L 1 14 L 0 12 Z"
                                         fill="rgb(115, 115, 115)" />
                                 </svg>
-                                <option>List Entry # 1</option>
-                                <option>List Entry # 2</option>
-                                <option>List Entry # 3</option>
-                                <option>List Entry # 4</option>
-                                <option>List Entry # 5</option>
+                                <option>Cardiology</option>
+                                <option>Gynocology</option>
+                                <option>Gastroenterology</option>
+                                <option>Physician</option>
+                                <option>Microbiology</option>
                             </select></div>
                     </div>
                     <div class="form-group" style="margin-top: 10px"><label class="h6">Time *</label>
                         <div class="form-group" style="margin-top: 10px">
-                            <select class="custom-select form-control">
-                                <option>4:00 Available</option><svg width="8" height="14" viewBox="0 0 8 14"
+                            <select name="time" class="custom-select form-control">
+                                <option>Available</option><svg width="8" height="14" viewBox="0 0 8 14"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M 0 12 L 5 7 L 0 2 L 1 0 L 8 7 L 1 14 L 0 12 Z"
                                         fill="rgb(115, 115, 115)" />
                                 </svg>
-                                <option>List Entry # 1</option>
-                                <option>List Entry # 2</option>
-                                <option>List Entry # 3</option>
-                                <option>List Entry # 4</option>
-                                <option>List Entry # 5</option>
+                                <option>9:00 AM</option>
+                                <option>12:00 PM</option>
+                                <option>3:00 PM</option>
+                                <option>6:00 PM</option>
+                                <option>9: 00 PM</option>
                             </select></div>
                     </div>
                 </div>
                           <button class="show-form" onclick="toggleForm()" style="margin-top: 40px"><span>Book
                                   Appointment</span></button>
+                    </form>             
                 </div>
             </div>
 

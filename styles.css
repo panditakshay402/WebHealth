@@ -20,7 +20,7 @@ html,body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 102, 255, 0.74);
     width: 80%;
     max-width: 400px;
     padding: 20px;
@@ -34,7 +34,7 @@ html,body{
   }
 
   .transparent-button:hover{
-color: #fbff02;
+color: #1d6679;
 
   }
   .show-form:hover {
@@ -96,7 +96,7 @@ color: #fbff02;
 }
 
 .landingText h1{
-    font-size: 6vw;
+    font-size: 4vw;
     margin: 0 !important;
 }
 
