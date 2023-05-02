@@ -32,13 +32,14 @@
                 <br>
                 <div class="btn" >
                     <a href="#" ></a>
-                    <button class="transparent-button"  onclick="toggleForm()">Book An Appointment</button>
+                    <button class="transparent-button"  onclick="toggleForm()"> <b> Book An Appointment</b> </button>
                 </div>
             </div>
             <div class="landingImage" data-aos="fade-down" data-aos-duration="2000">
                 <img src="img/bg.png" alt="">
             </div>
         </div>
+
 
 
         <div >
@@ -51,7 +52,7 @@
                                 placeholder="Full Name * "></input></div>
                     </div>
                     <div class="form-group" style="margin-top: 10px"><label class="h6">Email address *</label>
-                        <div  class="form-group" style="margin-top: 10px"><input name="email" class="form-control" type="text"
+                        <div  class="form-group" style="margin-top: 10px"><input required name="email" class="form-control" type="text"
                                 placeholder="example@gmail.com  "></input></div>
                     </div>
                     <div class="form-group" style="margin-top: 10px"><label class="h6">Departement *</label>
@@ -83,7 +84,20 @@
                                 <option>6:00 PM</option>
                                 <option>9: 00 PM</option>
                             </select></div>
-                    </div>
+                    </div> <br>
+                <div>
+                    <label for="appointment_date">Appointment Date:</label>
+
+                    <div>
+                        
+                        <input type="date" id="appointment_date" name="appointment_date" 
+                        min="2023-05-03" required>
+
+
+                    </div>                    
+                </div>
+
+
                 </div>
                           <button class="show-form" onclick="toggleForm()" style="margin-top: 40px"><span>Book
                                   Appointment</span></button>
@@ -136,8 +150,8 @@
                     <img src="img/movie.png" class="cardoneImg" alt="" data-aos="fade-up" data-aos-duration="1100">
                     <div class="cardbgone"></div>
                     <div class="cardContent">
-                        <h2>Binge Watch</h2>
-                        <p>Binge-watch all your favorite TV Shows or Movies during this Quarantine!</p>
+                        <h2>Find a Doctor</h2>
+                        <p>Locate the right care provider for you !</p>
                         <a href="#">
                             <div class="cardBtn">
                                 <img src="img/next.png" alt="" class="cardIcon">
@@ -149,8 +163,8 @@
                     <img src="img/learn.png" class="cardtwoImg" alt="" data-aos="fade-up" data-aos-duration="1200">
                     <div class="cardbgtwo"></div>
                     <div class="cardContent">
-                        <h2>Learn a New Skill</h2>
-                        <p>Try a new recipe, Write a blog or Learn a new language this Quarantine!</p>
+                        <h2>Find a Location</h2>
+                        <p>Quality healthcare close to you!</p>
                         <a href="#">
                             <div class="cardBtn">
                                 <img src="img/next.png" alt="" class="cardIcon">
@@ -162,8 +176,8 @@
                     <img src="img/videocall.png" class="cardthreeImg" alt="" data-aos="fade-up" data-aos-duration="1300">
                     <div class="cardbgone"></div>
                     <div class="cardContent">
-                        <h2>Video Call</h2>
-                        <p>Have fun video calling your friends or family this Quarantine!</p>
+                        <h2>Nutrition Services</h2>
+                        <p>Personalized nutrition for all stages of life !</p>
                         <a href="#">
                             <div class="cardBtn">
                                 <img src="img/next.png" alt="" class="cardIcon">

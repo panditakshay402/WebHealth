@@ -12,10 +12,10 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $department = $_POST['department'];
 $time = $_POST['time'];
-
+$appointment_date = $_POST['appointment_date'];
 
 // Insert data into MySQL table
-$sql = "INSERT INTO appointments (name, email, department,time) VALUES ('$name', '$email', '$department', 'time')";
+$sql = "INSERT INTO appointments (name, email, department,time,appointment_date) VALUES ('$name', '$email', '$department', 'time','appointment_date')";
 
 if (mysqli_query($conn, $sql)) {
     echo "Appointment Booked successfully!";
